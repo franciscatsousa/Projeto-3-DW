@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;700&display=swap');
+
+@font-face {
+	font-family: 'Clash Display';
+	src: url('../assets/ClashDisplay-Semibold.otf');
+}
+
+$roboto: 'Roboto Mono', monospace;
+$clash: 'Clash Display', sans-serif;
+
+$radiusSmall: 0.375rem;
+$radiusLarge: 0.625rem;
+$shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+
+$white: #ffffff;
+$black: #000000;
+
+$primary: #2c66ff;
+$secondary: #91aaeb;
+
+$neutralDark: #616161;
+$neutralLight: #acacac;

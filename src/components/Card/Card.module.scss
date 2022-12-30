@@ -1,0 +1,25 @@
+@import '../../styles/mixins.scss';
+
+.cardContainer {
+	@include flex($flexDirection: column,
+		$alignItems: flex-start,
+		$gap: 0.5rem);
+	@include font($fontFamily: $clash,
+		$fontSize: 1.5rem,
+		$color: $secondary);
+
+	.topTitle {
+		align-self: flex-end;
+	}
+
+	img {
+		max-height: 80vh;
+	}
+
+	&:hover {
+		cursor: pointer;
+		color: $primary;
+	}
+
+	transition: transform 0.5s;
+}

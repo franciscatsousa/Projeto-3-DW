@@ -1,0 +1,14 @@
+@import '../../styles/mixins.scss';
+
+.cardGalleryContainer {
+	@include flex();
+	overflow-y: scroll;
+
+	>a>div:hover {
+		transform: translate(0, -1rem);
+	}
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}

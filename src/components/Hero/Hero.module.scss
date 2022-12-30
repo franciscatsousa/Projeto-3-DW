@@ -1,0 +1,43 @@
+@import '../../styles/mixins.scss';
+
+.heroContainer {
+	@include font($fontFamily: $clash, $lineHeight: 250%);
+	position: relative;
+
+	>img {
+		width: 40%;
+		position: absolute;
+		left: 35%;
+		z-index: -1;
+	}
+
+	>span {
+		position: absolute;
+	}
+
+	>:nth-child(1) {
+		color: $primary;
+		font-size: 3rem;
+		width: 20%;
+		left: 20%;
+		top: 35%;
+	}
+
+	>:nth-child(3) {
+		line-height: 100%;
+		font-size: 2rem;
+		right: 22.5%;
+		color: $primary;
+		top: 10%;
+		width: 15%;
+	}
+
+	>:nth-child(4) {
+		color: $secondary;
+		line-height: 100%;
+		font-size: 1.25rem;
+		width: 15%;
+		right: 15%;
+		top: 70%;
+	}
+}

@@ -1,0 +1,43 @@
+@import '../../styles/mixins.scss';
+
+.sidebarContainer {
+	@include container($borderRadius: none,
+		$boxShadow: none,
+		$padding: 2rem,
+		$border: none,
+	);
+	@include flex($flexDirection: column,
+		$justifyContent: space-between,
+		$alignItems: center,
+		$gap: 0);
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	border-right: 2px solid $primary;
+	font-weight: bold;
+	color: $primary;
+
+	p {
+		color: $secondary;
+	}
+
+	a>span {
+		@include font($fontFamily: $clash, $fontSize: 2rem, $color: $primary);
+		margin-top: 1rem;
+	}
+
+	a:visited {
+		color: inherit;
+	}
+
+	ul>a>li {
+		margin: 0.5rem 0;
+
+		&:hover {
+			cursor: pointer;
+			color: $secondary;
+		}
+	}
+}

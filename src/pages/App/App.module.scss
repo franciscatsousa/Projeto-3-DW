@@ -1,0 +1,36 @@
+@import '../../styles/mixins.scss';
+
+.workContainer {
+	@include flex($gap: 0rem);
+	margin-left: 20%;
+
+	>div:first-child {
+		@include flex($justifyContent: flex-start,
+			$flexDirection: column,
+			$alignItems: flex-start, $gap: 1.5rem);
+		padding: 38vh 0;
+		padding-right: 1rem;
+		z-index: 1;
+		background: rgb(255, 255, 255);
+		background: linear-gradient(90deg, rgba(255, 255, 255, 1) 84%, rgba(2, 0, 36, 0) 100%);
+
+		>span {
+			font-family: $clash;
+		}
+
+		>:nth-child(1) {
+			font-size: 3rem;
+			color: $primary;
+		}
+
+		>:nth-child(2) {
+			color: $secondary;
+		}
+	}
+}
+
+.aboutContainer {
+	margin-left: 20%;
+	margin-bottom: 5%;
+	height: fit-content;
+}
